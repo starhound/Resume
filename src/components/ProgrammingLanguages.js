@@ -1,4 +1,6 @@
-export default function ProgrammingLanguages() {
+import React from 'react';
+
+function ProgrammingLanguages() {
     return (
         <dl className="flex flex-col sm:flex-row sm:justify-between p-2 sm:pt-2 sm:pb-2 sm:pl-8 sm:pr-8">
             <dt className="text-lg sm:text-xl font-bold">Programming Languages</dt>
@@ -12,3 +14,4 @@ export default function ProgrammingLanguages() {
         </dl>
     )
 }
+export default ProgrammingLanguages;

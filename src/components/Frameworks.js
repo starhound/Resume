@@ -7,7 +7,8 @@ export default function Frameworks() {
                     Git, Entity Framework, Xamarin, React/ReactNative, RESTful APIs, 
                     Angular.JS, Bootstrap, ASP.NET, .NET Framework/Core/Standard, UWP/WinForms, 
                     Flask, Django, Windows Services, Azure/AWS, xUnit/MSTest, jQuery, Ajax,
-                    Azure DevOps, Docker/Docker Compose, Webpack, NPM, NuGet, Pip
+                    Azure DevOps, Docker/Docker Compose, Webpack, NPM, NuGet, Pip, Material UI,
+                    Tailwind CSS, SASS, LESS, WebSockets, SignalR, RabbitMQ
                 </p>
             </dd>
         </dl>
