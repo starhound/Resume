@@ -53,7 +53,7 @@ export default function WorkExperience() {
                     <div className="flex flex-col sm:flex-row items-center">
                         <h2 className="text-base sm:text-xl whitespace-nowrap ml-2">Project Lead Developer</h2>
                         <span className="sm:pl-4 mt-2 sm:mt-0 sm:ml-2 text-xs sm:text-sm workTime">
-                            <a href="https://comply365.com/">Telesmatic Systems LLC</a> - New Port Richey FL, December 2018-Current
+                            <a href="https://lostsouls.org/">Telesmatic Systems LLC</a> - New Port Richey FL, December 2018-Current
                         </span>
                     </div>
                     <hr />
