@@ -1,4 +1,8 @@
 export default function ContactCard() {
+    const handlePrint = () => {
+        window.print();
+    };
+
     return (
         <div id="contact-info" className="vcard p-1 sm:p-1">
             <h1 className="fn text-2xl sm:text-4xl">Wesley Reid</h1>
@@ -8,7 +12,8 @@ export default function ContactCard() {
                 Email: <a className="email" href="mailto:wesleyreid0@gmail.com">wesleyreid0@gmail.com</a>
                 <br />
                 <a href="https://linkedin.com/in/starhound" className="block sm:inline-block">Linkedin</a>&emsp;
-                <a href="https://github.com/starhound" className="block sm:inline-block">Github</a>
+                <a href="https://github.com/starhound" className="block sm:inline-block">Github</a>&emsp;
+                <button onClick={handlePrint} className="no-print block sm:inline-block print-button"><p className="no-print">Print</p></button>
                 <br />
             </p>
         </div>

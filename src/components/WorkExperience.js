@@ -84,14 +84,16 @@ export default function WorkExperience() {
                     </div>
                     <hr />
                     <WorkExperienceResponsibilityList items={revenueManagementResponsibilities} />
-                    <div className="flex flex-col sm:flex-row items-center">
-                        <h2 className="text-base sm:text-xl whitespace-nowrap ml-2">Software Engineer</h2>
-                        <span className="sm:pl-4 mt-2 sm:mt-0 sm:ml-2 text-xs sm:text-sm workTime">
-                            <a href="https://www.bayonet-inc.com/">Bayonet Plumbing, Heating & Air Conditioning</a> - Hudson FL, Jan 2020-Aug 2021
-                        </span>
+                    <div className="no-print">
+                        <div className="flex flex-col sm:flex-row items-center">
+                            <h2 className="text-base sm:text-xl whitespace-nowrap ml-2">Software Engineer</h2>
+                            <span className="sm:pl-4 mt-2 sm:mt-0 sm:ml-2 text-xs sm:text-sm workTime">
+                                <a href="https://www.bayonet-inc.com/">Bayonet Plumbing, Heating & Air Conditioning</a> - Hudson FL, Jan 2020-Aug 2021
+                            </span>
+                        </div>
+                        <hr />
+                        <WorkExperienceResponsibilityList items={bayonetPlumbingResponsibilities} />
                     </div>
-                    <hr />
-                    <WorkExperienceResponsibilityList items={bayonetPlumbingResponsibilities} />
                 </dd>
             </dl>
     );
