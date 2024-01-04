@@ -19,6 +19,16 @@ export default function WorkExperience() {
         "Integrate third party APIs from various web and private services to provide additional functionality to or extract information (player driven data) out of the game world.",
         "Integrate new development patterns and practices, documentation standards, error tracking, version source control, and any other third party integrations to improve the development workflow."
     ];
+
+    const hanekeDesignResponsibilities = [
+        "Perform full service consultation and development for multiple clients pertaining to .NET Framework, .NET Core, and Javascript based web applications.",
+        "Design and develop custom end to end solutions for clients utilizing the latest technologies and frameworks.",
+        "Assist in greenfield development projects to create new web applications or services for clients.",
+        "Provide ongoing support and maintenance for existing web applications and services.",
+        "Develop deployment plans for applications on the Azure platform, along with providing cost analysis and recommendations for the client.",
+        "Educate developers and stakeholders regarding best practices and patterns for the development of web applications and services pertaining to .NET ecosystem.",
+        "Work with business and product owners to gather requirements and provide technical solutions to application development."
+    ];
     
     const revenueManagementResponsibilities = [
         "Assisted in the ongoing maintenance and creation of financial analytical tools written with .NET Framework, .NET Core, ASP.NET and Javascript which are utilized by multiple Fortune 500 clients.",
@@ -50,6 +60,14 @@ export default function WorkExperience() {
                     </div>
                     <hr />
                     <WorkExperienceResponsibilityList items={comply365Responsibilities} />
+                    <div className="flex flex-col sm:flex-row items-center">
+                        <h2 className="text-base sm:text-xl whitespace-nowrap ml-2">Senior .NET Engineer (Contract)</h2>
+                        <span className="sm:pl-4 mt-2 sm:mt-0 sm:ml-2 text-xs sm:text-sm workTime">
+                            <a href="https://www.hanekedesign.com/">Haneke Design</a> - Tampa FL, June 2023-Current
+                        </span>
+                    </div>
+                    <hr />
+                    <WorkExperienceResponsibilityList items={hanekeDesignResponsibilities} />
                     <div className="flex flex-col sm:flex-row items-center">
                         <h2 className="text-base sm:text-xl whitespace-nowrap ml-2">Project Lead Developer</h2>
                         <span className="sm:pl-4 mt-2 sm:mt-0 sm:ml-2 text-xs sm:text-sm workTime">
