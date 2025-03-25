@@ -6,9 +6,8 @@ function ProgrammingLanguages() {
             <dt className="text-lg sm:text-xl font-bold">Programming Languages</dt>
             <dd className="mt-2 sm:mt-0 sm:pl-4">
                 <p className="text-sm sm:text-base">
-                    C#, Javascript/TypeScript, Python, C/C++, XML/XAML/XSLT, YAML,
-                    Visual Basic, Bash, LUA, Java, Perl, MicroPython, Go, PHP, 
-                    Kotlin, Erlang, ColdFusion, Ruby, Powershell, LPC
+                    Bash, Bicep, C/C++, C#, ColdFusion, Erlang, Go, Java (11, 17), Javascript/TypeScript, Kotlin, 
+                    LPC, LUA, MicroPython, Perl, PHP, Powershell, Python, Ruby, Terraform, Visual Basic, XML/XAML/XSLT, YAML
                 </p>
             </dd>
         </dl>
