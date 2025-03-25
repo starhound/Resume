@@ -4,7 +4,7 @@ export default function WorkExperience() {
     const comply365Responsibilities = [
         "Assist in the development of document distribution and authoring software on a full stack capacity utilizing technologies related to the .NET Framework, ASP.NET, and .NET Core, and Javascript.",
         "Assist in new product web application development utilizing modern software tools and methodologies (TypeScript, .NET 6, Azure DevOps).",
-        "Develop and and integrate WYSIWYG XML editors to facilitate the authoring and distribution of documents within the software platform.",
+        "Develop and integrate WYSIWYG XML editors to facilitate the authoring and distribution of documents within the software platform.",
         "Provide direction and guidance regarding containerization of legacy software projects for both Production and Development workloads (DevContainers, DockerDesktop, WSL).",
         "Develop and maintain legacy Java web applications using the Spring Framework and Hibernate ORM.",
         "Actively participate in an agile software development life cycle (Scrum, Kanban) and all related sprint ceremonies.",
