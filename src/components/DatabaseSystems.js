@@ -4,9 +4,8 @@ export default function DatabaseSystems() {
             <dt className="text-lg sm:text-xl font-bold">Database Systems</dt>
             <dd className="mt-2 sm:mt-0 sm:pl-4">
                 <p className="text-sm sm:text-base">
-                    MS-SQL Server, MariaDB, PostgreSQL, MongoDB, SQLite, Redis, 
-                    CouchDB, Oracle, MySQL, DynamoDB, CosmosDB, SAP HANA, MarkLogic,
-                    Elasticsearch/OpenStack, GraphQL
+                    CouchDB, CosmosDB, DynamoDB, Elasticsearch/OpenStack, GraphQL, MariaDB, MarkLogic, 
+                    MongoDB, MS-SQL Server, MySQL, Oracle, PostgreSQL, Redis, SAP HANA, SQLite
                 </p>
             </dd>
         </dl>
