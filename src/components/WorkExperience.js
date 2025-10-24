@@ -55,7 +55,7 @@ export default function WorkExperience() {
                 <dd className="sm:pl-4 sm:pt-2">
                     {/* Current Senior Position */}
                     <div className="flex flex-col sm:flex-row sm:items-center mb-2">
-                        <h2 className="text-lg sm:text-xl font-semibold">Senior Software Engineer</h2>
+                        <h2 className="text-lg sm:text-xl font-semibold sm:whitespace-nowrap">Senior Software Engineer</h2>
                         <span className="sm:pl-4 mt-1 sm:mt-0 sm:ml-2 text-sm sm:text-sm workTime">
                             <a href="https://comply365.com/">Comply365</a> - Beloit Wisconsin (Remote), April 2025-Current
                         </span>
@@ -65,7 +65,7 @@ export default function WorkExperience() {
                     
                     {/* Previous Position at Same Company - Smaller Display */}
                     <div className="flex flex-col sm:flex-row sm:items-center mb-1 mt-3 opacity-80">
-                        <h3 className="text-base sm:text-lg font-medium italic">Previously: Web Software Engineer</h3>
+                        <h3 className="text-base sm:text-lg font-medium italic sm:whitespace-nowrap">Previously: Web Software Engineer</h3>
                         <span className="sm:pl-4 mt-1 sm:mt-0 sm:ml-2 text-xs sm:text-sm workTime">
                             May 2022-April 2025
                         </span>
@@ -78,7 +78,7 @@ export default function WorkExperience() {
                     
                     {/* Other Work Experience */}
                     <div className="flex flex-col sm:flex-row sm:items-center mb-2 mt-4">
-                        <h2 className="text-lg sm:text-xl font-semibold">Project Lead Developer</h2>
+                        <h2 className="text-lg sm:text-xl font-semibold sm:whitespace-nowrap">Project Lead Developer</h2>
                         <span className="sm:pl-4 mt-1 sm:mt-0 sm:ml-2 text-sm sm:text-sm workTime">
                             <a href="https://lostsouls.org/">Telesmatic Systems LLC</a> - New Port Richey FL, December 2018-Current
                         </span>
@@ -87,7 +87,7 @@ export default function WorkExperience() {
                     <WorkExperienceResponsibilityList items={telesmaticSystemsResponsibilities} />
                     
                     <div className="flex flex-col sm:flex-row sm:items-center mb-2">
-                        <h2 className="text-lg sm:text-xl font-semibold">Full Stack Engineer (Contracted)</h2>
+                        <h2 className="text-lg sm:text-xl font-semibold sm:whitespace-nowrap">Full Stack Engineer (Contracted)</h2>
                         <span className="sm:pl-4 mt-1 sm:mt-0 sm:ml-2 text-sm sm:text-sm workTime">
                             <a href="https://www.revenuemanage.com/">Revenue Management Solutions</a> - Tampa FL, Sep 2021-Jan 2022
                         </span>
@@ -97,7 +97,7 @@ export default function WorkExperience() {
                     
                     <div className="no-print">
                         <div className="flex flex-col sm:flex-row sm:items-center mb-2">
-                            <h2 className="text-lg sm:text-xl font-semibold">Software Engineer</h2>
+                            <h2 className="text-lg sm:text-xl font-semibold sm:whitespace-nowrap">Software Engineer</h2>
                             <span className="sm:pl-4 mt-1 sm:mt-0 sm:ml-2 text-sm sm:text-sm workTime">
                                 <a href="https://www.bayonet-inc.com/">Bayonet Plumbing, Heating & Air Conditioning</a> - Hudson FL, Jan 2020-Aug 2021
                             </span>
