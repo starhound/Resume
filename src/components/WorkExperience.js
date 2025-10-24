@@ -42,37 +42,37 @@ export default function WorkExperience() {
     
 
     return (
-        <dl className="flex flex-col sm:flex-row sm:justify-between p-2 sm:pt-2 sm:pb-2 sm:pl-8 sm:pr-8">
-                <dt className="text-lg sm:text-xl font-bold">Work Experience</dt>
-                <dd className="p-2 sm:pt-2 sm:pl-2">
-                    <div className="flex flex-col sm:flex-row items-center">
-                        <h2 className="text-base sm:text-xl whitespace-nowrap ml-2">Web Software Engineer</h2>
-                        <span className="sm:pl-4 mt-2 sm:mt-0 sm:ml-2 text-xs sm:text-sm workTime">
+        <dl className="flex flex-col sm:flex-row sm:justify-between p-4 sm:pt-2 sm:pb-2 sm:pl-8 sm:pr-8">
+                <dt className="text-xl sm:text-xl font-bold mb-2 sm:mb-0">Work Experience</dt>
+                <dd className="sm:pl-4 sm:pt-2">
+                    <div className="flex flex-col sm:flex-row sm:items-center mb-2">
+                        <h2 className="text-lg sm:text-xl font-semibold">Web Software Engineer</h2>
+                        <span className="sm:pl-4 mt-1 sm:mt-0 sm:ml-2 text-sm sm:text-sm workTime">
                             <a href="https://comply365.com/">Comply365</a> - Beloit Wisconsin (Remote), May 2022-Current
                         </span>
                     </div>
                     <hr />
                     <WorkExperienceResponsibilityList items={comply365Responsibilities} />
-                    <div className="flex flex-col sm:flex-row items-center">
-                        <h2 className="text-base sm:text-xl whitespace-nowrap ml-2">Project Lead Developer</h2>
-                        <span className="sm:pl-4 mt-2 sm:mt-0 sm:ml-2 text-xs sm:text-sm workTime">
+                    <div className="flex flex-col sm:flex-row sm:items-center mb-2">
+                        <h2 className="text-lg sm:text-xl font-semibold">Project Lead Developer</h2>
+                        <span className="sm:pl-4 mt-1 sm:mt-0 sm:ml-2 text-sm sm:text-sm workTime">
                             <a href="https://lostsouls.org/">Telesmatic Systems LLC</a> - New Port Richey FL, December 2018-Current
                         </span>
                     </div>
                     <hr />
                     <WorkExperienceResponsibilityList items={telesmaticSystemsResponsibilities} />
-                    <div className="flex flex-col sm:flex-row items-center">
-                        <h2 className="text-base sm:text-xl whitespace-nowrap ml-2">Full Stack Engineer (Contracted)</h2>
-                        <span className="sm:pl-4 mt-2 sm:mt-0 sm:ml-2 text-xs sm:text-sm workTime">
+                    <div className="flex flex-col sm:flex-row sm:items-center mb-2">
+                        <h2 className="text-lg sm:text-xl font-semibold">Full Stack Engineer (Contracted)</h2>
+                        <span className="sm:pl-4 mt-1 sm:mt-0 sm:ml-2 text-sm sm:text-sm workTime">
                             <a href="https://www.revenuemanage.com/">Revenue Management Solutions</a> - Tampa FL, Sep 2021-Jan 2022
                         </span>
                     </div>
                     <hr />
                     <WorkExperienceResponsibilityList items={revenueManagementResponsibilities} />
                     <div className="no-print">
-                        <div className="flex flex-col sm:flex-row items-center">
-                            <h2 className="text-base sm:text-xl whitespace-nowrap ml-2">Software Engineer</h2>
-                            <span className="sm:pl-4 mt-2 sm:mt-0 sm:ml-2 text-xs sm:text-sm workTime">
+                        <div className="flex flex-col sm:flex-row sm:items-center mb-2">
+                            <h2 className="text-lg sm:text-xl font-semibold">Software Engineer</h2>
+                            <span className="sm:pl-4 mt-1 sm:mt-0 sm:ml-2 text-sm sm:text-sm workTime">
                                 <a href="https://www.bayonet-inc.com/">Bayonet Plumbing, Heating & Air Conditioning</a> - Hudson FL, Jan 2020-Aug 2021
                             </span>
                         </div>
