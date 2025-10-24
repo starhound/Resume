@@ -1,16 +1,24 @@
 import WorkExperienceResponsibilityList from "./WorkExperienceResponsibilityList";
 
 export default function WorkExperience() {
-    const comply365Responsibilities = [
-        "Assist in the development of document distribution and authoring software on a full stack capacity utilizing technologies related to the .NET Framework, ASP.NET, and .NET Core, and Javascript.",
-        "Assist in new product web application development utilizing modern software tools and methodologies (TypeScript, .NET 6, Azure DevOps).",
-        "Develop and integrate WYSIWYG XML editors to facilitate the authoring and distribution of documents within the software platform.",
-        "Provide direction and guidance regarding containerization of legacy software projects for both Production and Development workloads (DevContainers, DockerDesktop, WSL).",
-        "Develop and maintain legacy Java web applications using the Spring Framework and Hibernate ORM.",
-        "Actively participate in an agile software development life cycle (Scrum, Kanban) and all related sprint ceremonies.",
-        "Design and implement Entity Framework classes and code focused migrations for MQ-SQL databases.",
-        "Create and document development tools or configurations to enable rapid project onboarding, along with enabling solutions within IDEs to facilitate an easier development experience.",
-        "Design, document, and implement programmatic solutions to legacy software issues using modernized cloud based services (Azure Functions, Service Hub & AppServices)."
+    const comply365SeniorResponsibilities = [
+        "Lead full-stack development of document distribution and authoring software utilizing .NET Framework, ASP.NET, .NET Core, and modern JavaScript frameworks.",
+        "Architect and develop new product web applications using cutting-edge technologies including TypeScript, .NET 8+, and Azure DevOps.",
+        "Design and integrate WYSIWYG XML editors to facilitate advanced document authoring and distribution within the platform.",
+        "Mentor team members on containerization strategies for both Production and Development workloads (DevContainers, Docker Desktop, WSL).",
+        "Lead development efforts on Java web applications using the Spring Framework and Hibernate ORM.",
+        "Drive technical decisions and participate in agile software development ceremonies (Scrum, Kanban).",
+        "Design complex Entity Framework architectures and code-first migrations for MS-SQL databases.",
+        "Create and maintain development tools, configurations, and IDE solutions to streamline developer onboarding and productivity.",
+        "Architect cloud-based solutions to modernize legacy software using Azure Functions, Service Bus, and App Services.",
+        "Develop AI and LLM product level integrations and further low level NLP pipelines on large text datasets using tools like AWS Bedrock and Microsoft Semantic Kernel."
+    ];
+
+    const comply365WebEngineerResponsibilities = [
+        "Assisted in the development of document distribution and authoring software on a full-stack capacity.",
+        "Contributed to new product web application development utilizing TypeScript, .NET 6, and Azure DevOps.",
+        "Developed and integrated WYSIWYG XML editors for document authoring platforms.",
+        "Provided guidance on containerization of legacy software projects for Production and Development workloads."
     ];
     
     const telesmaticSystemsResponsibilities = [
@@ -45,15 +53,31 @@ export default function WorkExperience() {
         <dl className="flex flex-col sm:flex-row sm:justify-between p-4 sm:pt-2 sm:pb-2 sm:pl-8 sm:pr-8">
                 <dt className="text-xl sm:text-xl font-bold mb-2 sm:mb-0">Work Experience</dt>
                 <dd className="sm:pl-4 sm:pt-2">
+                    {/* Current Senior Position */}
                     <div className="flex flex-col sm:flex-row sm:items-center mb-2">
-                        <h2 className="text-lg sm:text-xl font-semibold">Web Software Engineer</h2>
+                        <h2 className="text-lg sm:text-xl font-semibold">Senior Software Engineer</h2>
                         <span className="sm:pl-4 mt-1 sm:mt-0 sm:ml-2 text-sm sm:text-sm workTime">
-                            <a href="https://comply365.com/">Comply365</a> - Beloit Wisconsin (Remote), May 2022-Current
+                            <a href="https://comply365.com/">Comply365</a> - Beloit Wisconsin (Remote), April 2025-Current
                         </span>
                     </div>
                     <hr />
-                    <WorkExperienceResponsibilityList items={comply365Responsibilities} />
-                    <div className="flex flex-col sm:flex-row sm:items-center mb-2">
+                    <WorkExperienceResponsibilityList items={comply365SeniorResponsibilities} />
+                    
+                    {/* Previous Position at Same Company - Smaller Display */}
+                    <div className="flex flex-col sm:flex-row sm:items-center mb-1 mt-3 opacity-80">
+                        <h3 className="text-base sm:text-lg font-medium italic">Previously: Web Software Engineer</h3>
+                        <span className="sm:pl-4 mt-1 sm:mt-0 sm:ml-2 text-xs sm:text-sm workTime">
+                            May 2022-April 2025
+                        </span>
+                    </div>
+                    <ul className="list-disc pl-5 sm:pl-5 my-2 opacity-80">
+                        {comply365WebEngineerResponsibilities.map((item, index) => (
+                            <li className="pb-1 text-sm sm:text-sm leading-relaxed" key={index}>{item}</li>
+                        ))}
+                    </ul>
+                    
+                    {/* Other Work Experience */}
+                    <div className="flex flex-col sm:flex-row sm:items-center mb-2 mt-4">
                         <h2 className="text-lg sm:text-xl font-semibold">Project Lead Developer</h2>
                         <span className="sm:pl-4 mt-1 sm:mt-0 sm:ml-2 text-sm sm:text-sm workTime">
                             <a href="https://lostsouls.org/">Telesmatic Systems LLC</a> - New Port Richey FL, December 2018-Current
@@ -61,6 +85,7 @@ export default function WorkExperience() {
                     </div>
                     <hr />
                     <WorkExperienceResponsibilityList items={telesmaticSystemsResponsibilities} />
+                    
                     <div className="flex flex-col sm:flex-row sm:items-center mb-2">
                         <h2 className="text-lg sm:text-xl font-semibold">Full Stack Engineer (Contracted)</h2>
                         <span className="sm:pl-4 mt-1 sm:mt-0 sm:ml-2 text-sm sm:text-sm workTime">
@@ -69,6 +94,7 @@ export default function WorkExperience() {
                     </div>
                     <hr />
                     <WorkExperienceResponsibilityList items={revenueManagementResponsibilities} />
+                    
                     <div className="no-print">
                         <div className="flex flex-col sm:flex-row sm:items-center mb-2">
                             <h2 className="text-lg sm:text-xl font-semibold">Software Engineer</h2>
