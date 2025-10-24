@@ -2,7 +2,7 @@ import WorkExperienceResponsibilityList from "./WorkExperienceResponsibilityList
 
 export default function WorkExperience() {
     const comply365SeniorResponsibilities = [
-        "Develop AI and LLM product level integrations and further low level NLP pipelines on large text datasets using tools like AWS Bedrock and Microsoft Semantic Kernel.",
+        "Develop AI/LLM product level integrations and further low level NLP pipelines on large text datasets using tools like AWS Bedrock and Microsoft Semantic Kernel.",
         "Lead full-stack development of document distribution and authoring software utilizing .NET Framework, Java, ASP.NET, .NET Core, and modern JavaScript frameworks.",
         "Architect and develop new product web applications using cutting-edge technologies including TypeScript, .NET 8+ as well as Java using platforms like Atlassian Bitbucket/Github/Azure Devops.",
         "Mentor team members on containerization strategies for both Production and Development workloads (DevContainers, Docker Desktop, WSL).",
