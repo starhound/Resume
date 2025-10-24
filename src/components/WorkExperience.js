@@ -2,33 +2,36 @@ import WorkExperienceResponsibilityList from "./WorkExperienceResponsibilityList
 
 export default function WorkExperience() {
     const comply365SeniorResponsibilities = [
-        "Lead full-stack development of document distribution and authoring software utilizing .NET Framework, ASP.NET, .NET Core, and modern JavaScript frameworks.",
-        "Architect and develop new product web applications using cutting-edge technologies including TypeScript, .NET 8+, and Azure DevOps.",
-        "Design and integrate WYSIWYG XML editors to facilitate advanced document authoring and distribution within the platform.",
+        "Develop AI and LLM product level integrations and further low level NLP pipelines on large text datasets using tools like AWS Bedrock and Microsoft Semantic Kernel.",
+        "Lead full-stack development of document distribution and authoring software utilizing .NET Framework, Java, ASP.NET, .NET Core, and modern JavaScript frameworks.",
+        "Architect and develop new product web applications using cutting-edge technologies including TypeScript, .NET 8+ as well as Java using platforms like Atlassian Bitbucket/Github/Azure Devops.",
         "Mentor team members on containerization strategies for both Production and Development workloads (DevContainers, Docker Desktop, WSL).",
         "Lead development efforts on Java web applications using the Spring Framework and Hibernate ORM.",
+        "Provide actionable technical insights to stakeholders, converting architectural and performance data into strategic recommendations that drive business decisions and improve development velocity.",
         "Drive technical decisions and participate in agile software development ceremonies (Scrum, Kanban).",
-        "Design complex Entity Framework architectures and code-first migrations for MS-SQL databases.",
         "Create and maintain development tools, configurations, and IDE solutions to streamline developer onboarding and productivity.",
-        "Architect cloud-based solutions to modernize legacy software using Azure Functions, Service Bus, and App Services.",
-        "Develop AI and LLM product level integrations and further low level NLP pipelines on large text datasets using tools like AWS Bedrock and Microsoft Semantic Kernel."
     ];
 
     const comply365WebEngineerResponsibilities = [
         "Assisted in the development of document distribution and authoring software on a full-stack capacity.",
         "Contributed to new product web application development utilizing TypeScript, .NET 6, and Azure DevOps.",
         "Developed and integrated WYSIWYG XML editors for document authoring platforms.",
-        "Provided guidance on containerization of legacy software projects for Production and Development workloads."
+        "Designed multi-tenant Entity Framework architectures and code-first migrations for MS-SQL databases.",
+        "Designed and integrate WYSIWYG XML editors to facilitate advanced document authoring and distribution within the platform.",
+        "Provided guidance on containerization of legacy software projects for Production and Development workloads.",
+        "Architected cloud-based solutions to modernize legacy software using Azure Functions, Service Bus, App Services and more.",
+
     ];
     
     const telesmaticSystemsResponsibilities = [
-        "Owner and lead developer of the online game Lost Souls MUD (hosted at www.lostsouls.org) which has been in operation for over 30 years.",
-        "Create, maintain, or refactor code within the game libraries and drivers which are written in LPC and C.",
+        "Owner and lead developer of the online game Lost Souls MUD which has been in continuous operation for over 35 years.",
+        "Create, maintain, or refactor code within the game libraries and drivers which are written in LPC, C or Python (3.10+).",
         "Utilize trusted Azure cloud products to host the game and its supporting services, such as; Static Web Apps, Functions, Application Gateways, Container Registries and more.",
         "Utilize Docker and Docker Compose to create development and production environments for all products offered by the company, along with CI/CD pipelines to facilitate the deployments.",
         "Provide direction and training regarding the ongoing development of the game itself to a private volunteer development team consisting of over 20 international software professionals.",
         "Integrate third party APIs from various web and private services to provide additional functionality to or extract information (player driven data) out of the game world.",
-        "Integrate new development patterns and practices, documentation standards, error tracking, version source control, and any other third party integrations to improve the development workflow."
+        "Integrate new development patterns and practices, documentation standards, error tracking, version source control, and any other third party integrations to improve the development workflow.",
+        "Architect and operate a multi-node Kubernetes platform powering complementary services (APIs, telemetry, monitoring, analytics, web apps); design and maintain Helm charts, enforce security and RBAC policies, implement observability, optimize scaling, and manage continuous deployment and lifecycle maintenance."
     ];
 
     const revenueManagementResponsibilities = [
