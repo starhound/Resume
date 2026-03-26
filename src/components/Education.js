@@ -14,12 +14,6 @@ export default function Education() {
                     <span className="mt-1 sm:mt-0 sm:ml-2 text-sm sm:text-base">2018 - 2020</span>
                 </div>
                 <p className="text-base sm:text-base mb-4">Associate in Science - Saint Petersburg College: Tarpon Springs, FL</p>
-
-                <div className="flex flex-col sm:flex-row sm:items-center mb-2">
-                    <h2 className="text-base sm:text-lg font-bold">Computer Maintenance Technology</h2>
-                    <span className="mt-1 sm:mt-0 sm:ml-2 text-sm sm:text-base">2010-2012</span>
-                </div>
-                <p className="text-base sm:text-base">Certificate of Competition - Marchman Technical College: New Port Richey, FL</p>
             </dd>
         </dl>
     )
