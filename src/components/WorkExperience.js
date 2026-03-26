@@ -2,14 +2,14 @@ import WorkExperienceResponsibilityList from "./WorkExperienceResponsibilityList
 
 export default function WorkExperience() {
     const comply365SeniorResponsibilities = [
-        "Develop AI/LLM product level integrations and further low level NLP pipelines on large text datasets using tools like AWS Bedrock and Microsoft Semantic Kernel.",
+        "Develop AI/LLM product level integrations and further low level NLP pipelines on large text datasets using tools like AWS Bedrock and Microsoft Agent Framework.",
+        "Design and implement a scalable microservice MCP framework to accomplish unified data access and operations across the company software suite using Python 3.14, LangChain, and FastAPI.",
+        "Build and deploy autonomous AI agents to automate complex business workflows, leveraging retrieval-augmented generation (RAG), prompt engineering, and intelligent orchestration patterns.",
+        "Design and implement AI search and embedding systems for large-scale document retrieval, combining vector similarity with traditional keyword search using AWS OpenSearch and custom embedding pipelines.",
         "Lead full-stack development of document distribution and authoring software utilizing .NET Framework, Java, ASP.NET, .NET Core, and modern JavaScript frameworks.",
-        "Architect and develop new product web applications using cutting-edge technologies including TypeScript, .NET 8+ as well as Java using platforms like Atlassian Bitbucket/Github/Azure Devops.",
-        "Mentor team members on containerization strategies for both Production and Development workloads (DevContainers, Docker Desktop, WSL).",
-        "Lead development efforts on Java web applications using the Spring Framework and Hibernate ORM.",
-        "Provide actionable technical insights to stakeholders, converting architectural and performance data into strategic recommendations that drive business decisions and improve development velocity.",
-        "Drive technical decisions and participate in agile software development ceremonies (Scrum, Kanban).",
-        "Create and maintain development tools, configurations, and IDE solutions to streamline developer onboarding and productivity.",
+        "Architect and develop web applications and Java services using TypeScript, .NET 8+, Spring Framework, and Hibernate ORM across Bitbucket, GitHub, and Azure DevOps.",
+        "Mentor team members on containerization strategies and development tooling for Production and Development workloads (DevContainers, Docker Desktop, WSL).",
+        "Provide actionable technical insights to stakeholders, converting architectural and performance data into strategic recommendations that drive business decisions.",
     ];
 
     const comply365WebEngineerResponsibilities = [
