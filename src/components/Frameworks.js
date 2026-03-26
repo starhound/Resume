@@ -4,10 +4,10 @@ export default function Frameworks() {
             <dt className="text-xl sm:text-xl font-bold mb-2 sm:mb-0">Frameworks and Technologies</dt>
             <dd className="sm:pl-4">
                 <p className="text-base sm:text-base leading-relaxed">
-                    Ajax, Angular.JS, ASP.NET, AWS SDK, Azure/AWS, Azure DevOps, Bootstrap, Django, Docker/Docker Compose, 
-                    Entity Framework, FastAPI/FastMCP, Flask, Git, Jenkins, jQuery, LangChain, LESS, Material UI, Microsoft Agent Framework, 
-                    MSTest, .Net (Core, Framework, Standard), NPM, NuGet, OAuth2, Pip, RabbitMQ, React/ReactNative, Redis, RESTful APIs, SAML, 
-                    SASS, SignalR, SpringBoot, SSO (CAS, SAML, OAuth2, B2B/B2C), Tailwind CSS, UWP/WinForms, Webpack, WebSockets, Windows Services, Xamarin, xUnit,
+                    ASP.NET, AWS SDK, Azure/AWS, Azure DevOps, Django, Docker/Docker Compose,
+                    Entity Framework, FastAPI/FastMCP, Flask, Git, Jenkins, LangChain, Material UI, Microsoft Agent Framework,
+                    .NET (Core, Framework, Standard), RabbitMQ, React/ReactNative, Redis, RESTful APIs,
+                    SpringBoot, SSO (CAS, SAML, OAuth2, B2B/B2C), Tailwind CSS, WebSockets, xUnit,
                 </p>
             </dd>
         </dl>
