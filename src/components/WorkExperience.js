@@ -2,10 +2,10 @@ import WorkExperienceResponsibilityList from "./WorkExperienceResponsibilityList
 
 export default function WorkExperience() {
     const comply365SeniorResponsibilities = [
-        "Develop AI/LLM product level integrations and further low level NLP pipelines on large text datasets using tools like AWS Bedrock and Microsoft Agent Framework.",
+        "Develop AI/LLM product integrations and NLP pipelines on large text datasets using AWS Bedrock, SpringAI, and custom agent orchestration frameworks.",
         "Design and implement a scalable microservice MCP framework to accomplish unified data access and operations across the company software suite using Python 3.14, LangChain, and FastAPI/FastMCP.",
-        "Build and deploy autonomous AI agents to automate complex business workflows, leveraging retrieval-augmented generation (RAG), prompt engineering, and intelligent orchestration patterns.",
-        "Design and implement AI search and embedding systems for large-scale document retrieval, combining vector similarity with traditional keyword search using AWS OpenSearch and custom embedding pipelines.",
+        "Build and deploy autonomous AI agents to facilitate complex business workflows, leveraging retrieval-augmented generation (RAG), prompt engineering, and intelligent orchestration patterns.",
+        "Architect AI-powered search and embedding systems for large-scale document retrieval, combining vector similarity with traditional keyword search using AWS OpenSearch and custom embedding pipelines.",
         "Lead full-stack development of document distribution and authoring software utilizing .NET Framework, Java, ASP.NET, .NET Core, and modern JavaScript frameworks.",
         "Architect and develop web applications and Java services using TypeScript, .NET 8+, Spring Framework, and Hibernate ORM across Bitbucket, GitHub, and Azure DevOps.",
         "Mentor team members on containerization strategies and development tooling for Production and Development workloads (DevContainers, Docker Desktop, WSL).",
@@ -17,7 +17,7 @@ export default function WorkExperience() {
         "Contributed to new product web application development utilizing TypeScript, .NET 6, and Azure DevOps.",
         "Developed and integrated WYSIWYG XML editors for document authoring platforms.",
         "Designed multi-tenant Entity Framework architectures and code-first migrations for MS-SQL databases.",
-        "Designed and integrate WYSIWYG XML editors to facilitate advanced document authoring and distribution within the platform.",
+        "Designed and integrated WYSIWYG XML editors to facilitate advanced document authoring and distribution within the platform.",
         "Provided guidance on containerization of legacy software projects for Production and Development workloads.",
         "Architected cloud-based solutions to modernize legacy software using Azure Functions, Service Bus, App Services and more.",
 
