@@ -5,9 +5,9 @@ export default function Frameworks() {
             <dd className="sm:pl-4">
                 <p className="text-base sm:text-base leading-relaxed">
                     Ajax, Angular.JS, ASP.NET, AWS SDK, Azure/AWS, Azure DevOps, Bootstrap, Django, Docker/Docker Compose, 
-                    Entity Framework, Flask, Git, Jenkins, jQuery, LESS, Material UI, Microsoft Semantic Kernel, MSTest, NPM, NuGet, OAuth2, 
-                    Pip, RabbitMQ, React/ReactNative, Redis, RESTful APIs, SAML, SASS, SignalR, SpringBoot, SSO (CAS, SAML, OAuth2, B2B/B2C), 
-                    Tailwind CSS, UWP/WinForms, Webpack, WebSockets, Windows Services, Xamarin, xUnit, .NET Framework/Core/Standard
+                    Entity Framework, FastAPI/FastMCP, Flask, Git, Jenkins, jQuery, LangChain, LESS, Material UI, Microsoft Agent Framework, 
+                    MSTest, .Net (Core, Framework, Standard), NPM, NuGet, OAuth2, Pip, RabbitMQ, React/ReactNative, Redis, RESTful APIs, SAML, 
+                    SASS, SignalR, SpringBoot, SSO (CAS, SAML, OAuth2, B2B/B2C), Tailwind CSS, UWP/WinForms, Webpack, WebSockets, Windows Services, Xamarin, xUnit,
                 </p>
             </dd>
         </dl>
