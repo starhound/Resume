@@ -3,7 +3,7 @@ import WorkExperienceResponsibilityList from "./WorkExperienceResponsibilityList
 export default function WorkExperience() {
     const comply365SeniorResponsibilities = [
         "Develop AI/LLM product level integrations and further low level NLP pipelines on large text datasets using tools like AWS Bedrock and Microsoft Agent Framework.",
-        "Design and implement a scalable microservice MCP framework to accomplish unified data access and operations across the company software suite using Python 3.14, LangChain, and FastAPI.",
+        "Design and implement a scalable microservice MCP framework to accomplish unified data access and operations across the company software suite using Python 3.14, LangChain, and FastAPI/FastMCP.",
         "Build and deploy autonomous AI agents to automate complex business workflows, leveraging retrieval-augmented generation (RAG), prompt engineering, and intelligent orchestration patterns.",
         "Design and implement AI search and embedding systems for large-scale document retrieval, combining vector similarity with traditional keyword search using AWS OpenSearch and custom embedding pipelines.",
         "Lead full-stack development of document distribution and authoring software utilizing .NET Framework, Java, ASP.NET, .NET Core, and modern JavaScript frameworks.",
