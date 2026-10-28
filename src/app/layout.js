@@ -1,16 +1,14 @@
-import { Inter } from 'next/font/google'
-import './globals.css'
-
-const inter = Inter({ subsets: ['latin'] })
+import "./globals.css";
 
 export const metadata = {
-  title: 'Wesleys\' Résumé',
-}
+  title: "Wesley Reid | Senior Software Engineer",
+  description: "Wesley Reid's resume: senior software engineering, AI integrations, full-stack development, and cloud systems.",
+};
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body>{children}</body>
     </html>
-  )
+  );
 }

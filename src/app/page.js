@@ -1,40 +1,31 @@
-"use client";
-import WorkExperience from "../components/WorkExperience"
-import ProgrammingLanguages from "../components/ProgrammingLanguages"
-import DatabaseSystems from "../components/DatabaseSystems"
-import Frameworks from "../components/Frameworks"
-import Education from "../components/Education"
-import ContactCard from "../components/ContactCard"
-import React, { useEffect } from 'react';
-import anime from 'animejs';
+import WorkExperience from "../components/WorkExperience";
+import ProgrammingLanguages from "../components/ProgrammingLanguages";
+import DatabaseSystems from "../components/DatabaseSystems";
+import Frameworks from "../components/Frameworks";
+import Education from "../components/Education";
+import ContactCard from "../components/ContactCard";
 
 export default function Home() {
-  useEffect(() => {
-    anime({
-      targets: '#page-wrap > *', // Target children of the `page-wrap` div
-      translateY: [100, 0], // Slide from 100px below to original position
-      opacity: [0, 1], // Fade from 0 to 1 opacity
-      easing: 'easeOutExpo',
-      duration: 1000,
-      delay: anime.stagger(100) // Delay each child's animation by 100ms
-    });
-  }, []);
   return (
-    <main className="flex min-h-screen flex-col px-4 sm:px-0">
-        <div id="page-wrap">
-            
-            <ContactCard />
-
-            <ProgrammingLanguages />
-
-            <Frameworks />
-            
-            <DatabaseSystems />
-            
-            <WorkExperience />
-
-            <Education />
+    <main id="page-wrap">
+      <ContactCard />
+      <p className="professional-summary">
+        Senior software engineer developing applied artificial intelligence (AI),
+        backend services, and full-stack document platforms with C#, .NET, Java,
+        Python, and TypeScript. Experience includes large language model (LLM)
+        integrations, retrieval-augmented generation (RAG), cloud systems, and
+        technical leadership for an international volunteer team.
+      </p>
+      <WorkExperience />
+      <section className="resume-section skills-section" aria-labelledby="skills-heading">
+        <h2 id="skills-heading">Technical Skills</h2>
+        <div className="skills-list">
+          <ProgrammingLanguages />
+          <Frameworks />
+          <DatabaseSystems />
         </div>
+      </section>
+      <Education />
     </main>
-  )
+  );
 }

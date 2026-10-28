@@ -1,257 +1,85 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  color-scheme: light;
+  --ink: #18212b;
+  --muted: #4b5563;
+  --accent: #164e63;
+  --line: #cbd5e1;
 }
 
-.print-button {
-    /* Styles for your print button */
-    padding: 8px 16px;
-    margin-top: 4px;
-    background-color: #4d4d4d;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    width: 100%;
+* { box-sizing: border-box; }
+button, input, textarea, select { font: inherit; }
+body { margin: 0; background: #f3f5f7; color: var(--ink); font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 1.5; }
+a { color: var(--accent); text-underline-offset: 3px; }
+a:hover { text-decoration: underline; }
+a:focus-visible, button:focus-visible { outline: 3px solid #0369a1; outline-offset: 4px; }
+p { margin: 0; }
+#page-wrap { width: min(100%, 940px); margin: 32px auto; padding: 40px 48px; background: #fff; box-shadow: 0 2px 18px #18212b12; }
+h1, h2, h3 { margin: 0; line-height: 1.25; }
+h1 { font-size: 38px; font-weight: 700; letter-spacing: -1px; }
+h2 { font-size: 18px; font-weight: 700; color: var(--accent); }
+h3 { font-size: 16px; font-weight: 700; }
+.contact-card { border-bottom: 2px solid var(--accent); padding-bottom: 20px; }
+.professional-title { margin-top: 5px; font-size: 18px; font-weight: 600; }
+.contact-links { display: flex; flex-wrap: wrap; gap: 4px 18px; margin: 12px 0 0; padding: 0; list-style: none; font-size: 14px; }
+.contact-links a { overflow-wrap: anywhere; }
+.contact-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
+.contact-actions button, .button-link { display: inline-block; border: 1px solid var(--accent); border-radius: 4px; padding: 7px 13px; background: var(--accent); color: #fff; font: inherit; font-size: 14px; cursor: pointer; text-decoration: none; }
+.contact-actions button:hover, .button-link:hover { background: #0e3b4c; }
+.professional-summary { margin-top: 20px; }
+.resume-section { margin-top: 25px; }
+.resume-section > h2 { border-bottom: 1px solid var(--line); padding-bottom: 6px; margin-bottom: 16px; }
+.position + .position { margin-top: 21px; }
+.position-heading { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 3px 16px; }
+.position-heading h3 { min-width: 0; flex: 1 1 280px; }
+.position-dates { color: var(--muted); font-size: 14px; white-space: nowrap; }
+.position-employer { margin-top: 3px; color: var(--muted); font-size: 14px; }
+.position-employer a { font-weight: 600; }
+.promotion-note { font-style: italic; }
+.responsibilities { margin: 8px 0 0; padding-left: 20px; }
+.responsibilities li { margin: 4px 0; padding-left: 2px; }
+.skills-list { display: grid; gap: 10px; }
+.skill-group h3 { font-size: 14px; margin-bottom: 2px; }
+.skill-group p { font-size: 14px; }
+.additional-skills { color: var(--muted); margin-top: 3px; }
+.education-entry + .education-entry { margin-top: 12px; }
+.education-entry > p { margin-top: 3px; font-size: 14px; }
+@media (max-width: 640px) {
+  body { background: #fff; }
+  #page-wrap { margin: 0 auto; padding: 24px 20px; box-shadow: none; }
+  h1 { font-size: 32px; }
+  .professional-title { font-size: 16px; }
+  .position-heading { display: block; }
+  .position-dates { margin-top: 4px; }
+  .contact-links { display: grid; gap: 5px; }
 }
-
-@media (min-width: 640px) {
-    .print-button {
-        width: auto;
-        padding: 2px 16px;
-    }
-}
-
-.print-button:hover {
-    background-color: #000000;
-}
-
+@page { size: letter; margin: 0.55in; }
 @media print {
-    .no-print {
-      display: none;
-    }
-}  
-
-@media (prefers-color-scheme: light) {
-  :root {
-    --foreground-rgb: 0, 0, 0;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-}
-
-/* Desktop styles - only apply on larger screens */
-@media (min-width: 640px) {
-  * {
-      margin: 0;
-      padding: 0;
-  }
-
-  body {
-      font: 16px Helvetica, Sans-Serif;
-      line-height: 24px;
-  }
-
-  .clear {
-      clear: both;
-  }
-
-  #page-wrap {
-      width: 800px;
-      margin: 40px auto 60px;
-  }
-
-  h1 {
-      margin: 0 0 16px 0;
-      padding: 0 0 16px 0;
-      font-size: 42px;
-      font-weight: bold;
-      letter-spacing: -2px;
-      border-bottom: 1px solid #999;
-  }
-
-  h2 {
-      font-size: 20px;
-      margin: 0 0 6px 0;
-      position: relative;
-  }
-
-  h3 {
-      font-size: 16px;
-      margin: 0 0 6px 0;
-      position: relative;
-  }
-
-  .workTime {
-      font-style: italic;
-      font-family: Georgia, Serif;
-      color: #999;
-  }
-
-  a {
-      color: #999;
-      text-decoration: none;
-      border-bottom: 1px dotted #999;
-  }
-
-  span {
-    color: #999;
-    text-decoration: none;
-  }
-
-  a:hover {
-      border-bottom-style: solid;
-      color: black;
-  }
-
-  ul {
-      margin: 0 0 32px 17px;
-  }
-
-  #objective {
-      width: 700px;
-      float: left;
-  }
-
-  #objective p {
-      font-family: Georgia, Serif;
-      font-style: italic;
-      color: #666;
-  }
-
-  dt {
-      font-style: italic;
-      font-weight: bold;
-      font-size: 18px;
-      text-align: right;
-      padding: 0 26px 0 0;
-      width: 150px;
-      float: left;
-      height: 100px;
-      border-right: 1px solid #999;
-  }
-
-  dd {
-      width: 600px;
-      float: right;
-  }
-
-  dd.clear {
-      float: none;
-      margin: 0;
-      height: 15px;
-  }
-}
-
-/* Mobile styles - apply below 640px */
-@media (max-width: 639px) {
-  * {
-      margin: 0;
-      padding: 0;
-  }
-
-  body {
-      font: 16px Helvetica, Sans-Serif;
-      line-height: 24px;
-  }
-
-  .clear {
-      clear: both;
-  }
-  
-  #page-wrap {
-      width: 100%;
-      max-width: 100%;
-      margin: 20px auto;
-  }
-  
-  h1 {
-      margin: 0 0 12px 0;
-      padding: 0 0 12px 0;
-      font-size: 32px;
-      font-weight: bold;
-      letter-spacing: -1px;
-      border-bottom: 1px solid #999;
-  }
-  
-  dt {
-      font-style: italic;
-      font-weight: bold;
-      font-size: 18px;
-      text-align: left;
-      border-right: none;
-      border-bottom: 1px solid #999;
-      padding-bottom: 8px;
-      width: 100%;
-      float: none;
-      height: auto;
-  }
-  
-  dd {
-      width: 100%;
-      float: none;
-      text-align: left;
-  }
-  
-  h2 {
-      font-size: 18px;
-      text-align: left;
-      font-weight: bold;
-      margin: 8px 0 4px 0;
-  }
-  
-  h3 {
-      font-size: 14px;
-      font-weight: bold;
-      margin: 4px 0;
-  }
-  
-  p {
-      font-size: 16px;
-      line-height: 1.6;
-  }
-  
-  .workTime {
-      font-style: italic;
-      font-family: Georgia, Serif;
-      color: #999;
-      font-size: 14px;
-  }
-  
-  a {
-      color: #999;
-      text-decoration: none;
-      border-bottom: 1px dotted #999;
-  }
-  
-  a:hover {
-      border-bottom-style: solid;
-      color: black;
-  }
-  
-  span {
-      color: #999;
-      text-decoration: none;
-  }
-  
-  ul {
-      font-size: 16px;
-      list-style-position: outside;
-      margin: 12px 0;
-      padding-left: 20px;
-  }
-  
-  li {
-      line-height: 1.6;
-      margin-bottom: 8px;
-  }
+  .no-print { display: none !important; }
+  body { background: #fff; color: #111; font-size: 10pt; line-height: 1.3; }
+  #page-wrap { width: 100%; max-width: none; margin: 0; padding: 0; box-shadow: none; }
+  h1 { font-size: 24pt; }
+  h2 { font-size: 12pt; color: #111; }
+  h3 { font-size: 10.5pt; }
+  a { color: inherit; text-decoration: none; }
+  .contact-card { padding-bottom: 9pt; border-bottom-width: 1pt; }
+  .professional-title { font-size: 11pt; margin-top: 3pt; }
+  .contact-links { display: flex; flex-wrap: wrap; gap: 2pt 12pt; margin-top: 7pt; font-size: 9pt; }
+  .contact-links li + li::before { content: " | "; white-space: pre; }
+  .professional-summary { margin-top: 10pt; }
+  .resume-section { margin-top: 13pt; }
+  .resume-section > h2 { padding-bottom: 4pt; margin-bottom: 8pt; break-after: avoid; }
+  .position + .position { margin-top: 10pt; }
+  .position { break-inside: avoid; }
+  .position-heading { display: flex; break-after: avoid; }
+  .position-heading h3 { flex-basis: auto; }
+  .position-dates, .position-employer { font-size: 9pt; }
+  .position-employer { margin-top: 2pt; break-after: avoid; }
+  .responsibilities { margin-top: 4pt; padding-left: 14pt; }
+  .responsibilities li { margin: 3pt 0; break-inside: avoid; }
+  .skill-group { break-inside: avoid; }
+  .skills-list { gap: 6pt; }
+  .skill-group h3 { font-size: 9.5pt; }
+  .skill-group p, .education-entry > p { font-size: 9pt; }
+  .education-entry { break-inside: avoid; }
+  .education-entry + .education-entry { margin-top: 7pt; }
 }

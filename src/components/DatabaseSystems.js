@@ -1,13 +1,15 @@
 export default function DatabaseSystems() {
-    return (
-        <dl className="flex flex-col sm:flex-row sm:justify-between p-4 sm:pt-2 sm:pb-2 sm:pl-8 sm:pr-8">
-            <dt className="text-xl sm:text-xl font-bold mb-2 sm:mb-0">Database Systems</dt>
-            <dd className="sm:pl-4">
-                <p className="text-base sm:text-base leading-relaxed">
-                    AWS OpenSearch, CouchDB, CosmosDB, DynamoDB, Elasticsearch/OpenStack, GraphQL, MariaDB, MarkLogic, 
-                    MongoDB, MS-SQL Server, MySQL, Oracle, PostgreSQL, Redis, SAP HANA, SQLite
-                </p>
-            </dd>
-        </dl>
-    )
+  return (
+    <>
+      <div className="skill-group">
+        <h3>Data &amp; Search</h3>
+        <p>SQL Server, PostgreSQL, MySQL, Redis, DynamoDB, Cosmos DB, MongoDB, Amazon OpenSearch, Elasticsearch.</p>
+        <p className="additional-skills no-print">Additional experience: CouchDB, MariaDB, MarkLogic, Oracle, SAP HANA, SQLite.</p>
+      </div>
+      <div className="skill-group no-print">
+        <h3>Other Technologies</h3>
+        <p>GraphQL, OpenStack.</p>
+      </div>
+    </>
+  );
 }

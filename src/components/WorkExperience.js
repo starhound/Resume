@@ -1,114 +1,92 @@
 import WorkExperienceResponsibilityList from "./WorkExperienceResponsibilityList";
 
+const positions = [
+  {
+    title: "Senior Software Engineer",
+    employer: "Comply365",
+    url: "https://comply365.com/",
+    location: "Beloit, WI (Remote)",
+    dates: "Apr 2025 - Present",
+    responsibilities: [
+      "Develop large language model (LLM) integrations and natural language processing (NLP) pipelines for large text datasets using AWS Bedrock and Spring AI.",
+      "Design Python microservices using Model Context Protocol (MCP), LangChain, and FastAPI/FastMCP to unify data access and operations across the product suite.",
+      "Build autonomous agents using retrieval-augmented generation (RAG) and orchestration patterns to support complex business workflows.",
+      "Architect hybrid document search with Amazon OpenSearch, vector embeddings, and keyword retrieval.",
+      "Lead full-stack development of document authoring and distribution software using .NET (C#), Java, TypeScript, Spring, and Hibernate.",
+      "Mentor engineers on containerized development and production workflows; translate architectural and performance findings into recommendations for stakeholders.",
+    ],
+  },
+  {
+    title: "Web Software Engineer",
+    employer: "Comply365",
+    url: "https://comply365.com/",
+    dates: "May 2022 - Apr 2025",
+    previous: true,
+    responsibilities: [
+      "Contributed to full-stack document authoring and distribution products using TypeScript, .NET 6, and Azure DevOps.",
+      "Developed and integrated WYSIWYG XML editors for document authoring.",
+      "Designed multi-tenant Entity Framework architectures and code-first migrations for SQL Server.",
+      "Architected Azure solutions to modernize legacy software using Functions, Service Bus, and App Services; guided containerization of legacy projects.",
+    ],
+  },
+  {
+    title: "Project Lead Developer",
+    employer: "Telesmatic Systems LLC",
+    url: "https://lostsouls.org/",
+    location: "New Port Richey, FL",
+    dates: "Dec 2018 - Present",
+    responsibilities: [
+      "Own and lead development of Lost Souls MUD, a game in continuous operation for over 35 years; maintain its LPC, C, and Python codebases.",
+      "Direct and train a volunteer development team of over 20 international software professionals; establish documentation, version control, and error-tracking practices.",
+      "Build Docker-based development and production environments, continuous integration and deployment (CI/CD) pipelines, Azure-hosted services, and third-party API integrations.",
+      "Architect and operate a multi-node Kubernetes platform for APIs, telemetry, analytics, and web apps, including Helm charts, RBAC, observability, scaling, and deployment.",
+    ],
+  },
+  {
+    title: "Full Stack Engineer (Contract)",
+    employer: "Revenue Management Solutions",
+    url: "https://www.revenuemanage.com/",
+    location: "Tampa, FL",
+    dates: "Sep 2021 - Jan 2022",
+    responsibilities: [
+      "Contributed to financial analytics tools used by Fortune 500 clients, using .NET Framework, .NET Core, ASP.NET, and JavaScript.",
+      "Developed Azure Functions to integrate client data across development and production environments, and expanded MVC web applications.",
+      "Integrated Excel reporting frameworks and helped develop and troubleshoot SQL stored procedures and queries for client data.",
+    ],
+  },
+  {
+    title: "Software Engineer",
+    employer: "Bayonet Plumbing, Heating & Air Conditioning",
+    url: "https://www.bayonet-inc.com/",
+    location: "Hudson, FL",
+    dates: "Jan 2020 - Aug 2021",
+    responsibilities: [
+      "Designed an ASP.NET microservice framework integrating Exchange, osTicket, Active Directory, Gophish, and SAP Business One; built SAP add-ons and connectors.",
+      "Configured and customized Rocket.Chat, including webhooks, bots, and event-driven scripts in Node.js and Python.",
+      "Created SQL stored procedures and Crystal Reports for SAP Business One data.",
+      "Developed Android and iOS apps with Xamarin and React Native, plus Flask web apps for data analysis and generation.",
+    ],
+  },
+];
+
 export default function WorkExperience() {
-    const comply365SeniorResponsibilities = [
-        "Develop AI/LLM product integrations and NLP pipelines on large text datasets using AWS Bedrock, SpringAI, and custom agent orchestration frameworks.",
-        "Design and implement a scalable microservice MCP framework to accomplish unified data access and operations across the company software suite using Python 3.14, LangChain, and FastAPI/FastMCP.",
-        "Build and deploy autonomous AI agents to facilitate complex business workflows, leveraging retrieval-augmented generation (RAG), prompt engineering, and intelligent orchestration patterns.",
-        "Architect AI-powered search and embedding systems for large-scale document retrieval, combining vector similarity with traditional keyword search using AWS OpenSearch and custom embedding pipelines.",
-        "Lead full-stack development of document distribution and authoring software utilizing .NET Framework, Java, ASP.NET, .NET Core, and modern JavaScript frameworks.",
-        "Architect and develop web applications and Java services using TypeScript, .NET 8+, Spring Framework, and Hibernate ORM across Bitbucket, GitHub, and Azure DevOps.",
-        "Mentor team members on containerization strategies and development tooling for Production and Development workloads (DevContainers, Docker Desktop, WSL).",
-        "Provide actionable technical insights to stakeholders, converting architectural and performance data into strategic recommendations that drive business decisions.",
-    ];
-
-    const comply365WebEngineerResponsibilities = [
-        "Assisted in the development of document distribution and authoring software on a full-stack capacity.",
-        "Contributed to new product web application development utilizing TypeScript, .NET 6, and Azure DevOps.",
-        "Developed and integrated WYSIWYG XML editors for document authoring platforms.",
-        "Designed multi-tenant Entity Framework architectures and code-first migrations for MS-SQL databases.",
-        "Designed and integrated WYSIWYG XML editors to facilitate advanced document authoring and distribution within the platform.",
-        "Provided guidance on containerization of legacy software projects for Production and Development workloads.",
-        "Architected cloud-based solutions to modernize legacy software using Azure Functions, Service Bus, App Services and more.",
-
-    ];
-    
-    const telesmaticSystemsResponsibilities = [
-        "Owner and lead developer of the online game Lost Souls MUD which has been in continuous operation for over 35 years.",
-        "Create, maintain, or refactor code within the game libraries and drivers which are written in LPC, C or Python (3.10+).",
-        "Utilize trusted Azure cloud products to host the game and its supporting services, such as; Static Web Apps, Functions, Application Gateways, Container Registries and more.",
-        "Utilize Docker and Docker Compose to create development and production environments for all products offered by the company, along with CI/CD pipelines to facilitate the deployments.",
-        "Provide direction and training regarding the ongoing development of the game itself to a private volunteer development team consisting of over 20 international software professionals.",
-        "Integrate third party APIs from various web and private services to provide additional functionality to or extract information (player driven data) out of the game world.",
-        "Integrate new development patterns and practices, documentation standards, error tracking, version source control, and any other third party integrations to improve the development workflow.",
-        "Architect and operate a multi-node Kubernetes platform powering complementary services (APIs, telemetry, monitoring, analytics, web apps); design and maintain Helm charts, enforce security and RBAC policies, implement observability, optimize scaling, and manage continuous deployment and lifecycle maintenance."
-    ];
-
-    const revenueManagementResponsibilities = [
-        "Assisted in the ongoing maintenance and creation of financial analytical tools written with .NET Framework, .NET Core, ASP.NET and Javascript which are utilized by multiple Fortune 500 clients.",
-        "Developed Azure Function applications to facilitate the integration of client data into various development and production environments.",
-        "Utilized the MVC pattern to develop or expand robust and modern web applications for business purposes on a Front and Back end basis to solve ongoing software issues or feature additions across multiple software projects.",
-        "Leveraged and integrated third party frameworks to create Excel reports based on client provided data and requirements.",
-        "Assisted in the development and troubleshooting of SQL parameter based stored procedures and queries to handle the input or selection of customer related data."
-    ];
-    
-    const bayonetPlumbingResponsibilities = [
-        "Designed and implemented an ASP.NET micro-service framework to integrate with several business critical application platforms such as; Microsoft Exchange, osTicket, Active Directory, Gophish, SAP Business One, and many others.",
-        "Developed and maintained custom SAP Business One add ons and connectors to facilitate data transfer with third party services.",
-        "Configured and customize a deployment of a Rocket.Chat server to centralize forms of company wide communication. Developed multiple outgoing and incoming webhooks, channel listeners/bots, and other event driven scripts in Node.Js and Python 3.",
-        "Created and altered SQL Stored Procedures for later use in Crystal Reports driven from data provided by an SAP B1 deployment.",
-        "Developed custom Android and iOS applications using Xamarin (C#/.NET) and ReactNative (Javascript) frameworks.",
-        "Generated dynamic websites/web-apps using Flask (Python3) for data analysis or generation."
-    ];
-    
-
-    return (
-        <dl className="flex flex-col sm:flex-row sm:justify-between p-4 sm:pt-2 sm:pb-2 sm:pl-8 sm:pr-8">
-                <dt className="text-xl sm:text-xl font-bold mb-2 sm:mb-0">Work Experience</dt>
-                <dd className="sm:pl-4 sm:pt-2">
-                    {/* Current Senior Position */}
-                    <div className="flex flex-col sm:flex-row sm:items-center mb-2">
-                        <h2 className="text-lg sm:text-xl font-semibold sm:whitespace-nowrap">Senior Software Engineer</h2>
-                        <span className="sm:pl-4 mt-1 sm:mt-0 sm:ml-2 text-sm sm:text-sm workTime">
-                            <a href="https://comply365.com/">Comply365</a> - Beloit Wisconsin (Remote), April 2025-Current
-                        </span>
-                    </div>
-                    <hr />
-                    <WorkExperienceResponsibilityList items={comply365SeniorResponsibilities} />
-                    
-                    {/* Previous Position at Same Company - Smaller Display */}
-                    <div className="flex flex-col sm:flex-row sm:items-center mb-1 mt-3 opacity-80">
-                        <h3 className="text-base sm:text-lg font-medium italic sm:whitespace-nowrap">Previously: Web Software Engineer</h3>
-                        <span className="sm:pl-4 mt-1 sm:mt-0 sm:ml-2 text-xs sm:text-sm workTime">
-                            May 2022-April 2025
-                        </span>
-                    </div>
-                    <ul className="list-disc pl-5 sm:pl-5 my-2 opacity-80">
-                        {comply365WebEngineerResponsibilities.map((item, index) => (
-                            <li className="pb-1 text-sm sm:text-sm leading-relaxed" key={index}>{item}</li>
-                        ))}
-                    </ul>
-                    
-                    {/* Other Work Experience */}
-                    <div className="flex flex-col sm:flex-row sm:items-center mb-2 mt-4">
-                        <h2 className="text-lg sm:text-xl font-semibold sm:whitespace-nowrap">Project Lead Developer</h2>
-                        <span className="sm:pl-4 mt-1 sm:mt-0 sm:ml-2 text-sm sm:text-sm workTime">
-                            <a href="https://lostsouls.org/">Telesmatic Systems LLC</a> - New Port Richey FL, December 2018-Current
-                        </span>
-                    </div>
-                    <hr />
-                    <WorkExperienceResponsibilityList items={telesmaticSystemsResponsibilities} />
-                    
-                    <div className="flex flex-col sm:flex-row sm:items-center mb-2">
-                        <h2 className="text-lg sm:text-xl font-semibold sm:whitespace-nowrap">Full Stack Engineer (Contracted)</h2>
-                        <span className="sm:pl-4 mt-1 sm:mt-0 sm:ml-2 text-sm sm:text-sm workTime">
-                            <a href="https://www.revenuemanage.com/">Revenue Management Solutions</a> - Tampa FL, Sep 2021-Jan 2022
-                        </span>
-                    </div>
-                    <hr />
-                    <WorkExperienceResponsibilityList items={revenueManagementResponsibilities} />
-                    
-                    <div className="no-print">
-                        <div className="flex flex-col sm:flex-row sm:items-center mb-2">
-                            <h2 className="text-lg sm:text-xl font-semibold sm:whitespace-nowrap">Software Engineer</h2>
-                            <span className="sm:pl-4 mt-1 sm:mt-0 sm:ml-2 text-sm sm:text-sm workTime">
-                                <a href="https://www.bayonet-inc.com/">Bayonet Plumbing, Heating & Air Conditioning</a> - Hudson FL, Jan 2020-Aug 2021
-                            </span>
-                        </div>
-                        <hr />
-                        <WorkExperienceResponsibilityList items={bayonetPlumbingResponsibilities} />
-                    </div>
-                </dd>
-            </dl>
-    );
+  return (
+    <section className="resume-section experience-section" aria-labelledby="experience-heading">
+      <h2 id="experience-heading">Work Experience</h2>
+      {positions.map((position) => (
+        <article className={`position${position.previous ? " previous-position" : ""}`} key={`${position.employer}-${position.title}`}>
+          <div className="position-heading">
+            <h3>{position.title}</h3>
+            <p className="position-dates">{position.dates}</p>
+          </div>
+          <p className="position-employer">
+            <a href={position.url}>{position.employer}</a>
+            {position.location && <> | {position.location}</>}
+            {position.previous && <span className="promotion-note"> | Prior role before promotion</span>}
+          </p>
+          <WorkExperienceResponsibilityList items={position.responsibilities} />
+        </article>
+      ))}
+    </section>
+  );
 }
